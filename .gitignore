@@ -1,0 +1,27 @@
+# Spotify API credentials
+secrets.py
+config.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Spotify cache
+.cache
+.cache-*
+
+# Output files
+*.json
+*.txt
+
+# OS
+.DS_Store
+Thumbs.db

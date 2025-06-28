@@ -1,12 +1,9 @@
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import json
+import sys
 from collections import Counter
-
-# Configuration - Replace with your credentials
-CLIENT_ID = "your_client_id_here"
-CLIENT_SECRET = "your_client_secret_here"
-REDIRECT_URI = "http://localhost:8888/callback"
+from secrets import CLIENT_ID, CLIENT_SECRET, REDIRECT_URI
 
 # Spotify API scopes needed
 SCOPE = "playlist-read-private playlist-read-collaborative"
@@ -22,19 +19,21 @@ def setup_spotify_client():
     
     return spotipy.Spotify(auth_manager=auth_manager)
 
-def get_user_playlists(sp):
-    """Get all user playlists"""
-    playlists = []
+def find_playlist_by_name(sp, playlist_name):
+    """Find a specific playlist by name"""
     results = sp.current_user_playlists(limit=50)
     
     while results:
-        playlists.extend(results['items'])
+        for playlist in results['items']:
+            if playlist['name'].lower() == playlist_name.lower():
+                return playlist
+        
         if results['next']:
             results = sp.next(results)
         else:
             break
     
-    return playlists
+    return None
 
 def extract_artists_from_playlist(sp, playlist_id):
     """Extract all artists from a specific playlist"""
@@ -63,39 +62,43 @@ def extract_artists_from_playlist(sp, playlist_id):
 
 def main():
     try:
+        # Get playlist name from command line or user input
+        if len(sys.argv) > 1:
+            playlist_name = " ".join(sys.argv[1:])
+        else:
+            playlist_name = input("Enter playlist name: ").strip()
+        
+        if not playlist_name:
+            print("No playlist name provided!")
+            return
+        
         # Initialize Spotify client
         sp = setup_spotify_client()
         
-        # Get user playlists
-        print("Fetching your playlists...")
-        playlists = get_user_playlists(sp)
+        # Find the specific playlist
+        print(f"Looking for playlist: '{playlist_name}'...")
         
-        # Display playlists for selection
-        print("\nYour playlists:")
-        for i, playlist in enumerate(playlists):
-            print(f"{i+1}. {playlist['name']} ({playlist['tracks']['total']} tracks)")
+        playlist = find_playlist_by_name(sp, playlist_name)
         
-        # Get user selection
-        while True:
-            try:
-                choice = int(input(f"\nSelect playlist (1-{len(playlists)}): ")) - 1
-                if 0 <= choice < len(playlists):
-                    selected_playlist = playlists[choice]
-                    break
-                else:
-                    print("Invalid selection. Please try again.")
-            except ValueError:
-                print("Please enter a valid number.")
+        if not playlist:
+            print(f"Playlist '{playlist_name}' not found!")
+            print("\nAvailable playlists:")
+            playlists = sp.current_user_playlists(limit=50)
+            for p in playlists['items']:
+                print(f"  - {p['name']}")
+            return
         
-        # Extract artists from selected playlist
-        print(f"\nExtracting artists from '{selected_playlist['name']}'...")
-        artists = extract_artists_from_playlist(sp, selected_playlist['id'])
+        print(f"Found playlist: '{playlist['name']}' with {playlist['tracks']['total']} tracks")
+        
+        # Extract artists from the playlist
+        print(f"\nExtracting artists from '{playlist['name']}'...")
+        artists = extract_artists_from_playlist(sp, playlist['id'])
         
         # Count artist occurrences
         artist_counts = Counter([artist['name'] for artist in artists])
         
         # Display results
-        print(f"\n=== ARTISTS FROM '{selected_playlist['name']}' ===")
+        print(f"\n=== ARTISTS FROM '{playlist['name']}' ===")
         print(f"Total tracks: {len(artists)}")
         print(f"Unique artists: {len(artist_counts)}")
         
@@ -107,11 +110,14 @@ def main():
         for artist in sorted(set([a['name'] for a in artists])):
             print(f"  - {artist}")
         
+        # Create safe filename
+        safe_name = playlist['name'].replace(' ', '_').replace('/', '_').replace('\\', '_')
+        
         # Save to file
-        output_file = f"artists_{selected_playlist['name'].replace(' ', '_')}.json"
+        output_file = f"{safe_name}_artists.json"
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump({
-                'playlist_name': selected_playlist['name'],
+                'playlist_name': playlist['name'],
                 'total_tracks': len(artists),
                 'unique_artists': len(artist_counts),
                 'artist_counts': dict(artist_counts),
@@ -121,9 +127,22 @@ def main():
         
         print(f"\nData saved to: {output_file}")
         
+        # Also create a simple text file with just artist names
+        text_file = f"{safe_name}_artists_list.txt"
+        with open(text_file, 'w', encoding='utf-8') as f:
+            f.write(f"Artists from '{playlist['name']}'\n")
+            f.write("=" * 50 + "\n\n")
+            for artist in sorted(set([a['name'] for a in artists])):
+                f.write(f"{artist}\n")
+        
+        print(f"Artist list also saved to: {text_file}")
+        
+    except ImportError:
+        print("Error: secrets.py file not found!")
+        print("Please create secrets.py with your Spotify API credentials.")
     except Exception as e:
         print(f"Error: {e}")
-        print("Make sure you've set your CLIENT_ID and CLIENT_SECRET correctly.")
+        print("Make sure you've set your credentials correctly in secrets.py")
 
 if __name__ == "__main__":
     main()
