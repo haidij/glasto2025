@@ -60,16 +60,37 @@
     "Friday": [
       { "artist": "Corto.alto", "time": "11:30–12:30" },
       { "artist": "Ca7riel & Paco Amoroso", "time": "13:00–14:00" },
-      { "artist": "Glass Beams", "time": "14:30–15:30" },
-      { "artist": "Vieux Farka Touré", "time": "16:00–17:00" },
+      { "artist": "Glass Beams", "time": "14:30–15:25" },
+      { "artist": "Vieux Farka Toure", "time": "16:00–17:00" },
       { "artist": "En Vogue", "time": "17:30–18:30" },
       { "artist": "Denzel Curry", "time": "19:00–20:00" },
       { "artist": "BadBadNotGood", "time": "20:30–21:30" },
       { "artist": "Maribou State", "time": "22:15–23:45" }
+    ],
+    "Saturday": [
+      { "artist": "Infinity Song", "time": "11:30–12:30" },
+      { "artist": "Nilüfer Yanya", "time": "13:00–14:00" },
+      { "artist": "Bob Vylan", "time": "14:30–15:30" },
+      { "artist": "Kneecap", "time": "16:00–17:00" },
+      { "artist": "Yussef Dayes", "time": "17:30–18:30" },
+      { "artist": "Greentea Peng", "time": "19:00–20:00" },
+      { "artist": "Amaarae", "time": "20:30–21:30" },
+      { "artist": "Doechii", "time": "22:45–23:30" }
+    ],
+    "Sunday": [
+      { "artist": "Thandii", "time": "11:00–12:00" },
+      { "artist": "Abel Selaocoe & The Bantu Ensemble", "time": "12:30–13:30" },
+      { "artist": "Cymande", "time": "14:00–15:00" },
+      { "artist": "Black Uhuru", "time": "15:30–16:30" },
+      { "artist": "Goat", "time": "17:00–18:00" },
+      { "artist": "The Brian Jonestown Massacre", "time": "18:30–19:30" },
+      { "artist": "Parcels", "time": "20:00–21:00" },
+      { "artist": "Overmono", "time": "21:45–23:15" }
     ]
   },
   "Woodsies Stage (broadcast)": {
     "Friday": [
+      { "artist": "TBA", "time": "11:30–12:15" },
       { "artist": "Myles Smith", "time": "12:45–13:30" },
       { "artist": "Fat Dog", "time": "14:00–14:45" },
       { "artist": "Shed Seven", "time": "15:15–16:00" },
@@ -78,6 +99,27 @@
       { "artist": "PinkPantheress", "time": "19:30–20:30" },
       { "artist": "Floating Points", "time": "21:00–22:00" },
       { "artist": "Four Tet", "time": "22:30–23:45" }
+    ],
+    "Saturday": [
+      { "artist": "The Amazons", "time": "11:30–12:15" },
+      { "artist": "Sorry", "time": "12:45–13:30" },
+      { "artist": "Fcukers", "time": "14:00–14:45" },
+      { "artist": "Jade", "time": "15:15–16:00" },
+      { "artist": "Nova Twins", "time": "16:30–17:30" },
+      { "artist": "TV On The Radio", "time": "18:00–19:00" },
+      { "artist": "Father John Misty", "time": "19:30–20:30" },
+      { "artist": "Tom Odell", "time": "21:00–22:00" },
+      { "artist": "Scissor Sisters", "time": "22:30–23:45" }
+    ],
+    "Sunday": [
+      { "artist": "Westside Cowboy", "time": "11:15–12:00" },
+      { "artist": "Gurriers", "time": "12:30–13:30" },
+      { "artist": "Sprints", "time": "14:00–15:00" },
+      { "artist": "Djo", "time": "15:30–16:30" },
+      { "artist": "Black Country, New Road", "time": "17:00–18:00" },
+      { "artist": "St. Vincent", "time": "18:30–19:30" },
+      { "artist": "AJ Tracey", "time": "20:00–21:00" },
+      { "artist": "Jorja Smith", "time": "21:30–22:45" }
     ]
   },
   "Park Stage (broadcast)": {
