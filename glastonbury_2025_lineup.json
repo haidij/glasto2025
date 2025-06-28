@@ -1,0 +1,239 @@
+{
+  "Pyramid Stage (broadcast)": {
+    "Friday": [
+      { "artist": "Supergrass", "time": "12:00–13:00" },
+      { "artist": "CMAT", "time": "13:30–14:30" },
+      { "artist": "Burning Spear", "time": "15:00–16:00" },
+      { "artist": "Lewis Capaldi (secret slot)", "time": "16:55–17:30" },
+      { "artist": "Alanis Morissette", "time": "18:15–19:15" },
+      { "artist": "Biffy Clyro", "time": "20:15–21:15" },
+      { "artist": "The 1975", "time": "22:15–23:45" }
+    ],
+    "Saturday": [
+      { "artist": "Brandi Carlile", "time": "13:30–14:30" },
+      { "artist": "The Script", "time": "15:00–16:00" },
+      { "artist": "John Fogerty", "time": "16:30–17:30" },
+      { "artist": "Patchwork (secret act)", "time": "18:15–19:15" },
+      { "artist": "Raye", "time": "20:00–21:00" },
+      { "artist": "Neil Young & The Chrome Hearts", "time": "22:00–23:45" }
+    ],
+    "Sunday": [
+      { "artist": "The Selecter", "time": "11:15–12:00" },
+      { "artist": "Celeste", "time": "12:30–13:30" },
+      { "artist": "The Libertines", "time": "14:00–15:00" },
+      { "artist": "Rod Stewart", "time": "15:45–17:15" },
+      { "artist": "Nile Rodgers & Chic", "time": "18:00–19:00" },
+      { "artist": "Noah Kahan", "time": "19:45–20:45" },
+      { "artist": "Olivia Rodrigo", "time": "21:45–23:15" }
+    ]
+  },
+  "Other Stage (broadcast)": {
+    "Friday": [
+      { "artist": "Rizzle Kicks", "time": "13:00–13:45" },
+      { "artist": "Inhaler", "time": "14:15–15:15" },
+      { "artist": "Wet Leg", "time": "15:45–16:45" },
+      { "artist": "Franz Ferdinand", "time": "17:15–18:15" },
+      { "artist": "Gracie Abrams", "time": "18:45–19:45" },
+      { "artist": "Busta Rhymes", "time": "20:30–21:30" },
+      { "artist": "Loyle Carner", "time": "22:30–23:45" }
+    ],
+    "Saturday": [
+      { "artist": "Beabadoobee", "time": "14:00–15:00" },
+      { "artist": "Weezer", "time": "15:30–16:30" },
+      { "artist": "Amyl & the Sniffers", "time": "17:00–18:00" },
+      { "artist": "Ezra Collective", "time": "18:45–19:45" },
+      { "artist": "Deftones", "time": "20:30–21:30" },
+      { "artist": "Charli XCX", "time": "22:30–23:45" }
+    ],
+    "Sunday": [
+      { "artist": "Louis Dunford", "time": "11:15–12:00" },
+      { "artist": "Nadine Shah", "time": "12:30–13:15" },
+      { "artist": "Shaboozey", "time": "13:45–14:30" },
+      { "artist": "Joy Crookes", "time": "15:00–15:45" },
+      { "artist": "Turnstile", "time": "16:30–17:30" },
+      { "artist": "Snow Patrol", "time": "18:00–19:00" },
+      { "artist": "Wolf Alice", "time": "19:45–20:45" },
+      { "artist": "The Prodigy", "time": "21:45–23:15" }
+    ]
+  },
+  "West Holts Stage (broadcast)": {
+    "Friday": [
+      { "artist": "Corto.alto", "time": "11:30–12:30" },
+      { "artist": "Ca7riel & Paco Amoroso", "time": "13:00–14:00" },
+      { "artist": "Glass Beams", "time": "14:30–15:30" },
+      { "artist": "Vieux Farka Touré", "time": "16:00–17:00" },
+      { "artist": "En Vogue", "time": "17:30–18:30" },
+      { "artist": "Denzel Curry", "time": "19:00–20:00" },
+      { "artist": "BadBadNotGood", "time": "20:30–21:30" },
+      { "artist": "Maribou State", "time": "22:15–23:45" }
+    ]
+  },
+  "Woodsies Stage (broadcast)": {
+    "Friday": [
+      { "artist": "Myles Smith", "time": "12:45–13:30" },
+      { "artist": "Fat Dog", "time": "14:00–14:45" },
+      { "artist": "Shed Seven", "time": "15:15–16:00" },
+      { "artist": "Lola Young", "time": "16:30–17:30" },
+      { "artist": "Blossoms", "time": "18:00–19:00" },
+      { "artist": "PinkPantheress", "time": "19:30–20:30" },
+      { "artist": "Floating Points", "time": "21:00–22:00" },
+      { "artist": "Four Tet", "time": "22:30–23:45" }
+    ]
+  },
+  "Park Stage (broadcast)": {
+    "Friday": [
+      { "artist": "Horsegirl", "time": "11:30–12:30" },
+      { "artist": "John Glacier", "time": "12:45–13:30" },
+      { "artist": "Faye Webster", "time": "15:15–16:00" },
+      { "artist": "English Teacher", "time": "16:30–17:30" },
+      { "artist": "OSEES", "time": "18:00–19:00" },
+      { "artist": "Wunderhorse", "time": "19:30–20:30" },
+      { "artist": "Self Esteem", "time": "21:15–22:15" },
+      { "artist": "ANOHNI and The Johnsons", "time": "23:00–00:15" }
+    ],
+    "Saturday": [
+      { "artist": "Ichiko Aoba", "time": "12:45–13:30" },
+      { "artist": "Japanese Breakfast", "time": "14:00–14:45" },
+      { "artist": "Lucy Dacus", "time": "15:15–16:00" },
+      { "artist": "Pa Salieu", "time": "16:30–17:30" },
+      { "artist": "Gary Numan", "time": "18:00–19:00" },
+      { "artist": "Beth Gibbons", "time": "21:15–22:15" },
+      { "artist": "Caribou", "time": "23:00–00:15" }
+    ],
+    "Sunday": [
+      { "artist": "Geordie Greep", "time": "12:45–13:30" },
+      { "artist": "Katy J Pearson", "time": "14:00–14:45" },
+      { "artist": "Royel Otis", "time": "15:15–16:00" },
+      { "artist": "Kae Tempest", "time": "18:00–19:00" },
+      { "artist": "Future Islands", "time": "19:35–20:35" },
+      { "artist": "The Maccabees", "time": "21:15–22:30" }
+    ]
+  },
+  "Avalon Stage": {
+    "Friday": [
+      { "artist": "Dea Matrona", "time": "11:25–12:05" },
+      { "artist": "Talisk", "time": "12:30–13:25" },
+      { "artist": "Brooke Combe", "time": "13:55–14:50" },
+      { "artist": "The Horne Section", "time": "15:20–16:20" },
+      { "artist": "My Baby", "time": "16:50–17:50" },
+      { "artist": "Sam Ryder", "time": "19:50–20:50" },
+      { "artist": "Bear's Den", "time": "21:20–22:20" },
+      { "artist": "FÜLÜ", "time": "22:50–23:50" }
+    ],
+    "Saturday": [
+      { "artist": "Fülü", "time": "11:30–12:20" },
+      { "artist": "Bess Atwell", "time": "12:50–13:45" },
+      { "artist": "Stephen Wilson Jr.", "time": "14:15–15:10" },
+      { "artist": "Jamie Cullum", "time": "15:40–16:40" },
+      { "artist": "The Amy Winehouse Band", "time": "17:10–18:10" },
+      { "artist": "Jade Bird", "time": "18:40–19:40" },
+      { "artist": "Rachel Chinouriri", "time": "20:10–21:10" },
+      { "artist": "Tom Walker", "time": "21:40–22:40" },
+      { "artist": "Hard‑Fi", "time": "23:10–00:20" }
+    ],
+    "Sunday": [
+      { "artist": "Beans On Toast", "time": "12:50–13:40" },
+      { "artist": "Paris Paloma", "time": "15:35–16:35" },
+      { "artist": "Ash", "time": "17:05–18:05" },
+      { "artist": "Orla Gartland", "time": "18:35–19:35" },
+      { "artist": "The Magic Numbers", "time": "20:05–21:05" },
+      { "artist": "Terrorvision", "time": "21:35–22:35" },
+      { "artist": "The Fratellis", "time": "23:05–00:20" }
+    ]
+  },
+  "Left Field": {
+    "Friday": [
+      { "artist": "Chloe Slater", "time": "17:35–18:10" },
+      { "artist": "Lambrini Girls", "time": "19:50–20:30" },
+      { "artist": "Billy Bragg", "time": "21:00–22:00" }
+    ],
+    "Saturday": [
+      { "artist": "The Meffs", "time": "16:30–17:05" },
+      { "artist": "Gurriers", "time": "17:35–18:10" },
+      { "artist": "Jasmine.4.T", "time": "18:40–19:20" },
+      { "artist": "Lambrini Girls", "time": "19:50–20:30" },
+      { "artist": "Kate Nash", "time": "21:00–22:00" }
+    ],
+    "Sunday": [
+      { "artist": "Gurriers", "time": "17:35–18:10" },
+      { "artist": "Antony Szmierek", "time": "19:50–20:30" },
+      { "artist": "Billy Bragg", "time": "21:00–22:00" }
+    ]
+  },
+  "Small World Stage": {
+    "Thursday": [
+      { "artist": "Kitty Stewart", "time": "12:00–13:00" },
+      { "artist": "Mazaïka Duo", "time": "13:00–16:00" },
+      { "artist": "Rodney Branigan", "time": "14:15–15:15" },
+      { "artist": "Leo Baby", "time": "15:35–16:05" },
+      { "artist": "Mohamed Errebba & Tagna Groove", "time": "17:05–18:00" },
+      { "artist": "Seize The Day", "time": "18:40–19:40" },
+      { "artist": "Psyco‑Acoustic Goat", "time": "20:00–21:00" },
+      { "artist": "BOT", "time": "21:30–22:30" }
+    ],
+    "Saturday": [
+      { "artist": "Nuala", "time": "12:00–13:00" },
+      { "artist": "Panda & The Moniums", "time": "13:30–14:30" },
+      { "artist": "The Scribes", "time": "14:50–15:50" },
+      { "artist": "Mal Webb & Kylie Morrigan", "time": "16:15–17:15" },
+      { "artist": "Formidible Vegetable", "time": "17:45–18:45" },
+      { "artist": "Perkelt", "time": "19:15–20:15" },
+      { "artist": "Try Me", "time": "20:45–21:45" },
+      { "artist": "Thee Ones", "time": "22:30–23:30" },
+      { "artist": "3 Daft Monkeys", "time": "00:00–01:15" },
+      { "artist": "Duncan Disorderly & The Sacllywags", "time": "01:45–03:00" }
+    ],
+    "Sunday": [
+      { "artist": "KATYA", "time": "12:00–13:00" },
+      { "artist": "The Little Unsaid", "time": "13:15–14:15" },
+      { "artist": "David Celia", "time": "14:40–15:40" },
+      { "artist": "Emma Jane Mansfield", "time": "15:50–16:50" },
+      { "artist": "Shadow", "time": "17:00–18:00" },
+      { "artist": "Alex Dover", "time": "18:15–19:15" },
+      { "artist": "Whiskey Dram", "time": "19:30–20:30" },
+      { "artist": "Cinemon", "time": "21:00–22:00" },
+      { "artist": "Much Ado", "time": "22:30–23:30" },
+      { "artist": "Leo Baby", "time": "00:00–01:15" },
+      { "artist": "Mazaïka Duo", "time": "01:30–02:30" }
+    ]
+  },
+  "Toad Hall": {
+    "Wednesday": [
+      { "artist": "The Portraits", "time": "15:00–15:50" },
+      { "artist": "Birthplace of the Green Revolution", "time": "16:05–16:50" },
+      { "artist": "Andrew Maxwell Morris", "time": "17:10–17:50" },
+      { "artist": "Leah Sinead", "time": "18:10–18:50" },
+      { "artist": "Gecko", "time": "20:35–21:15" },
+      { "artist": "Formidable Vegetable", "time": "21:35–22:15" },
+      { "artist": "Opening Ceremony", "time": "22:30–23:15" },
+      { "artist": "Heard Collective", "time": "23:00–00:00" }
+    ],
+    "Friday": [
+      { "artist": "Junior Jungle", "time": "12:00–12:45" },
+      { "artist": "Nancy Williams", "time": "13:15–14:00" },
+      { "artist": "Afrodelic", "time": "14:30–15:30" },
+      { "artist": "Flo and Joan", "time": "16:00–17:00" },
+      { "artist": "Outrage + Optimism Live", "time": "17:30–19:00" },
+      { "artist": "Nabihah Iqbal", "time": "23:30–00:30" },
+      { "artist": "Banco de Gaia", "time": "01:00–02:00" }
+    ],
+    "Saturday": [
+      { "artist": "The Wran", "time": "12:00–13:00" },
+      { "artist": "Gemma Rogers", "time": "13:30–14:30" },
+      { "artist": "The South", "time": "15:00–16:00" },
+      { "artist": "Zaid Hilal & Beje", "time": "16:30–17:30" },
+      { "artist": "CVC", "time": "18:00–19:00" },
+      { "artist": "Newen Afrobeat", "time": "23:30–00:30" },
+      { "artist": "K.O.G", "time": "01:00–02:00" }
+    ],
+    "Sunday": [
+      { "artist": "Good Health Good Wealth", "time": "12:00–12:45" },
+      { "artist": "Latinas of London", "time": "13:15–14:15" },
+      { "artist": "Leo Baby", "time": "14:45–15:30" },
+      { "artist": "Dizraeli x Joy Machine", "time": "16:00–17:00" },
+      { "artist": "Getdown Services", "time": "17:30–18:30" },
+      { "artist": "Town of Cats", "time": "23:30–00:30" },
+      { "artist": "Rhythm of the 90's", "time": "01:00–02:00" }
+    ]
+  }
+}
