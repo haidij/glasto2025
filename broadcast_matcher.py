@@ -130,6 +130,27 @@ def main():
                 f.write(f"{match['day']} {match['time']} - {match['lineup_artist']} @ {match['stage']}\\n")
         
         print(f"Complete schedule saved to: complete_festival_schedule.txt")
+        
+        # Fix any literal \n characters in the files
+        fix_file_formatting('broadcast_schedule.txt')
+        fix_file_formatting('complete_festival_schedule.txt')
+
+def fix_file_formatting(filename):
+    """Fix literal \n characters in text files"""
+    try:
+        with open(filename, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Replace literal \n with actual line breaks
+        if '\\n' in content:
+            fixed_content = content.replace('\\n', '\n')
+            
+            with open(filename, 'w', encoding='utf-8') as f:
+                f.write(fixed_content)
+            
+            print(f"Fixed formatting in {filename}")
+    except Exception as e:
+        print(f"Could not fix {filename}: {e}")
 
 if __name__ == "__main__":
     main()
